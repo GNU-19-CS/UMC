@@ -10,7 +10,7 @@
 <body>
     <div id="header">
         <div id="header_content">
-            <div class="new_red">
+            <div class="new_red" onclick="changeBg()">
                 <div class="red_text">
                     NEW!
                 </div>
@@ -24,28 +24,30 @@
         </div>
     </div>
     <div id="main">
-        <div id="main_header">
-            <div class="logo">
-                <div class="main_logo">
-                    NETFLIX
+        <div id="blur">
+            <div id="main_header">
+                <div class="logo">
+                    <div class="main_logo">
+                        NETFLIX
+                    </div>
+                </div>
+                <div class="lang">
+                    <button class="lang_check">한국어</button>
+                </div>
+                <div class="sign_in">
+                    <a href="login.html"><button class="sign_in_text">로그인</button></a>
                 </div>
             </div>
-            <div class="lang">
-                <button class="lang_check">한국어</button>
-            </div>
-            <div class="sign_in">
-                <a href="login.html"><button class="sign_in_text">로그인</button></a>
-            </div>
-        </div>
-        <div id="main_content">
-            <div class="main_content_title">영화와 시리즈를 무제한으로.</div>
-            <div class="main_content_1">다양한 디바이스에서 시청하세용. 공짜에요~</div>
-            <div class="main_content_2">시청할 준비가 되셨나요? 멤버쉽 등록은 개나줘버려요!</div>
-            <div>
-                <form class="input_box">
-                    <input class="input" type="email" placeholder="이메일 주소">
-                    <input class="submit" type="submit" value="시작하기 >">
-                </form>
+            <div id="main_content">
+                <div class="main_content_title">영화와 시리즈를 무제한으로.</div>
+                <div class="main_content_1">다양한 디바이스에서 시청하세용. 공짜에요~</div>
+                <div class="main_content_2">시청할 준비가 되셨나요? 멤버쉽 등록은 개나줘버려요!</div>
+                <div>
+                    <form class="input_box">
+                        <input class="input" type="email" placeholder="이메일 주소">
+                        <input class="submit" type="submit" value="시작하기 >">
+                    </form>
+                </div>
             </div>
         </div>
     </div>
@@ -109,13 +111,34 @@
     <div id="qna">
         <div id="qna_title">자주 묻는 질문</div>
         <ul id="qna_list">
-            <div class="list"><li><div id="list_text">넷플릭스에서 뭐 볼 수 있음?</div></li></div>
-            <div class="list"><li><div id="list_text">넷플릭스가 뭐에요?</div></li></div>
-            <div class="list"><li><div id="list_text">요금제는?</div></li></div>
-            <div class="list"><li><div id="list_text">멤버쉽?</div></li></div>
-            <div class="list"><li><div id="list_text">어디서 봄?</div></li></div>
-            <div class="list"><li><div id="list_text">해지는 어케 함?</div></li></div>
-            <div class="list"><li><div id="list_text">애기들이 봐도 됨?</div></li></div>
+            <div class="list">
+                <li>넷플릭스에서 뭐 볼 수 있음? <a id="list_1">+</a></li>
+            </div>
+            <p id="hidden_content1">넷플릭스는 장편 영화, 다큐멘터리 등을 시청할 수 있음</p>
+            <div class="list">
+                <li>넷플릭스가 뭐에요? <a id="list_2">+</a></li>
+            </div>
+            <p id="hidden_content2">넷플릭스는 스트리밍 서비스에용~</p>
+            <div class="list">
+                <li>요금제는? <a id="list_3">+</a></li>
+            </div>
+            <p id="hidden_content3">조금 비싸용</p>
+            <div class="list">
+                <li>멤버쉽? <a id="list_4">+</a></li>
+            </div>
+            <p id="hidden_content4">광고 줄여준다네요</p>
+            <div class="list">
+                <li>어디서 봄? <a id="list_5">+</a></li>
+            </div>
+            <p id="hidden_content5">어디서든 가능!</p>
+            <div class="list">
+                <li>해지는 어케 함? <a id="list_6">+</a></li>
+            </div>
+            <p id="hidden_content6">클릭 두 번!</p>
+            <div class="list">
+                <li>애기들이 봐도 됨? <a id="list_7">+</a></li>
+            </div>
+            <p id="hidden_content7">당근!</p>
         </ul>
         <div id="qna_last_title">
             <h2>시청할 준비됨? 그럼 이메일 주소 입력해!</h2>
@@ -175,5 +198,7 @@
             공정거래위원회 웹사이트
         </div>
     </div>
+    <script src="change_color.js"></script>
+    <script src="list.js"></script>
 </body>
 </html>
