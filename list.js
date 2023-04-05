@@ -13,6 +13,7 @@ check1.addEventListener("click", function(){
     }
 });
 
+
 var isOpen2=false;
 var check2=document.querySelector("#list_2");
 check2.addEventListener("click", function(){
@@ -27,6 +28,7 @@ check2.addEventListener("click", function(){
       isOpen2=false;
     }
 });
+
 
 var isOpen3=false;
 var check3=document.querySelector("#list_3");
@@ -43,6 +45,7 @@ check3.addEventListener("click", function(){
     }
 });
 
+
 var isOpen4=false;
 var check4=document.querySelector("#list_4");
 check4.addEventListener("click", function(){
@@ -57,6 +60,7 @@ check4.addEventListener("click", function(){
       isOpen4=false;
     }
 });
+
 
 var isOpen5=false;
 var check5=document.querySelector("#list_5");
@@ -73,6 +77,7 @@ check5.addEventListener("click", function(){
     }
 });
 
+
 var isOpen6=false;
 var check6=document.querySelector("#list_6");
 check6.addEventListener("click", function(){
@@ -87,6 +92,7 @@ check6.addEventListener("click", function(){
       isOpen6=false;
     }
 });
+
 
 var isOpen7=false;
 var check7=document.querySelector("#list_7");
