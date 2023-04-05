@@ -1,5 +1,6 @@
 'use strict';
 
+
 let isOpen1=false;
 const check1=document.querySelector("#list_1");
 check1.addEventListener("click", function(){
